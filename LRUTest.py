@@ -1,18 +1,25 @@
 from LRU import LRU
 class LRUTest:
-	cacheobj = LRU(3)
-	cacheobj.get(1)
-	cacheobj.put(1)
-	cacheobj.put(2)
-	cacheobj.put(3)
+	
 
-	cacheobj.get_cache()
+	def test(self):
+		cacheobj = LRU(3)
+		cacheobj.put(1)
+		cacheobj.put(2)
+		cacheobj.put(3)
+		assert cacheobj.get(2) == 2 , "testcase-1 failed"
+		print("Testcase-1 passed")
+
+		assert cacheobj.get(6) == 6 , "testcase-1 failed"
+		print("Testcase-1 passed")
 
 
 
-assert "suucessful",cacheobj.put(1)
-assert "suucessful",cacheobj.put(2)
-assert "suucessful",cacheobj.put(3)
-assert "1",cacheobj.get()
-assert "3".cacheobj.get_cache()
-print("All test cases are passed")
+		print("All test cases are passed")
+
+		print("required cache is:")
+		print(cacheobj.get_cache())
+
+if __name__ == "__main__":
+	ca = LRUTest()
+	ca.test()

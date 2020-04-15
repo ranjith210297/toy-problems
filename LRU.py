@@ -9,7 +9,7 @@ class LRU:
 		if item in self.lru:
 			return self.lrucache[item]
 		else:
-			return default
+			default
 
 	def put(self,item):
 		if(len(self.lru) < self.size):
