@@ -10,9 +10,9 @@ class LRUTest:
 
 
 
-# assert("suucessful",cacheobj.put(1))
-# assert("suucessful",cacheobj.put(2))
-# assert("suucessful",cacheobj.put(3))
-# assert("1",cacheobj.get())
-# assert("3".cacheobj.get_cache())
-# print("All test cases are passed")
+assert "suucessful",cacheobj.put(1)
+assert "suucessful",cacheobj.put(2)
+assert "suucessful",cacheobj.put(3)
+assert "1",cacheobj.get()
+assert "3".cacheobj.get_cache()
+print("All test cases are passed")
