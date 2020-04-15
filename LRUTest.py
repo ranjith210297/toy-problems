@@ -1,6 +1,6 @@
 from LRU import LRU
 class LRUTest:
-	cacheobj = LRU()
+	cacheobj = LRU(3)
 	cacheobj.get(1)
 	cacheobj.put(1)
 	cacheobj.put(2)
