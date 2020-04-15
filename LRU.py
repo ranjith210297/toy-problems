@@ -32,6 +32,6 @@ class LRU:
 	def get_cache(self):
 		ls = []
 		for item in reversed(self.lru):
-			ls.append(item+"-"+self.lrucache[item])
+			ls.append(str(item)+"-"+str(self.lrucache[item]))
 		#return get-cache
 		print(ls)
