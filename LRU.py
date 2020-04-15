@@ -13,7 +13,7 @@ class LRU:
 
 	def put(self,item):
 		if(len(self.lru) < self.size):
-			if key in self.lru:
+			if item in self.lru:
 				self.lru.remove(item)
 				self.lru.append(item)
 				self.lrucache[item] = item
