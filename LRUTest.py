@@ -9,14 +9,9 @@ class LRUTest:
 		cacheobj.put(3)
 		assert cacheobj.get(2) == 2 , "testcase-1 failed"
 		print("Testcase-1 passed")
-
-		assert cacheobj.get(6) == 6 , "testcase-1 failed"
+		assert cacheobj.get(3) == 3 , "testcase-1 failed"
 		print("Testcase-1 passed")
-
-
-
 		print("All test cases are passed")
-
 		print("required cache is:")
 		print(cacheobj.get_cache())
 
